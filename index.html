@@ -1,1 +1,55 @@
-<div>Hello Mommy</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test Mommy</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  body {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1)
+    }
+    50% {
+      transform: translateY(-5vh) scale(1.2);
+    }
+    100% {
+      transform: translateY(0vh) scale(1);
+    }
+  }
+
+  .hello_world {
+    height: 100px;
+    width: 100px;
+    background: red;
+    border: 1px solid black;
+    border-radius: 300px;
+    animation: bounce 1s infinite;
+
+  }
+</style>
+<body>
+  <div class="hello_world">
+
+  </div>
+</body>
+</html>
